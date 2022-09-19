@@ -32,7 +32,7 @@ public class InteractionController {
     private InteractionService interactionService;
 
     @PostMapping(value = "/saveOrUpdate")
-    @ApiOperation(value = "")
+    @ApiOperation(value = "saveOrUpdate")
     public R saveOrUpdate(@RequestBody TaskVO taskVO){
         interactionService.saveOrUpdate(taskVO.getKey(), taskVO,"Tony");
         return R.ok();
